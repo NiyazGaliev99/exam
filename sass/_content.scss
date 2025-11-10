@@ -1,0 +1,51 @@
+html {
+  background: url(../img/image\ 12.png);
+  background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    background-image: url(../img/image\ 12\ 992.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+  }
+
+  @media screen and (max-width: 540px) {
+    background-image: url(../img/image\ 12\ 540.png);
+    overflow-y: unset;
+  }
+}
+
+body {
+  height: cover;
+  width: 1282px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
+
+  @media screen and (max-width: 992px) {
+    width: 702px;
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 540px) {
+    background: linear-gradient(161.71deg, rgba(0, 0, 0, 0.5) 40.06%, rgba(0, 0, 0, 0) 96.63%);
+    width: 540px;
+    height: 1545px;
+    position: relative;
+  }
+}
+
+.content {
+  padding: 114px 50px 26px 142px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @media screen and (max-width: 992px) {
+    padding: 48px 106px 20px 32px;
+    gap: 24px;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 48px 32px 0px 32px;
+    gap: 32px;
+  }
+}

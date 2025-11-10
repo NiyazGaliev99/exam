@@ -1,0 +1,40 @@
+.main {
+  padding-bottom: 15px;
+
+  @media screen and (max-width: 540px) {
+    padding-bottom: 0;
+  }
+
+  &_include{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @media screen and (max-width: 992px) {
+      gap: 24px;
+    }
+
+    @media screen and (max-width: 540px) {
+      gap: 32px;
+    }
+  }
+
+  &_man {
+    bottom: 0px;
+    position: fixed;
+    pointer-events: none;
+    right: 53px;
+
+    @media screen and (max-width: 992px) {
+      right: -25px;
+      height: 724px;
+    }
+
+    @media screen and (max-width: 540px) {
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      height: 800px;
+    }
+  }
+}

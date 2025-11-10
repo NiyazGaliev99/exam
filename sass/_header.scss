@@ -1,0 +1,19 @@
+.header {
+  &_gk {
+    @media screen and (max-width: 992px) {
+      padding-right: 24px;
+    }
+
+    &-img {
+      @media screen and (max-width: 992px) {
+        width: 540px;
+        height: 60px;
+      }
+
+      @media screen and (max-width: 540px) {
+        width: 476px;
+        height: 52.54px;
+      }
+    }
+  }
+}

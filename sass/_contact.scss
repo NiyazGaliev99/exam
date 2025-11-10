@@ -1,0 +1,137 @@
+.contact {
+  &_title {
+    font-size: 32px;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 37.5px;
+    letter-spacing: 3.5px;
+    padding-bottom: 24px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 24px;
+      line-height: 28.13px;
+      padding-bottom: 12px;
+      letter-spacing: 1.5px;
+    }
+
+    @media screen and (max-width: 540px) {
+      text-align: center;
+    }
+  }
+
+  &_form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    &-number {
+      &_title {
+        font-size: 15px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        line-height: 21.09px;
+        letter-spacing: 2px;
+        padding-left: 14px;
+        width: 292px;
+        height: 48px;
+
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+
+      &_input {
+        display: none;
+
+        @media screen and (max-width: 992px) {
+          display: unset;
+          width: 258px;
+          height: 40px;
+          font-family: 'Roboto';
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16.41px;
+          letter-spacing: 1.5px;
+          padding-left: 12px;
+        }
+
+        @media screen and (max-width: 540px) {
+          width: 457px;
+        }
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+    }
+
+    &-email {
+      &_input {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.44px;
+        letter-spacing: 2px;
+        padding-left: 14px;
+        width: 292px;
+        height: 48px;
+
+        @media screen and (max-width: 992px) {
+          width: 258px;
+          height: 40px;
+          font-size: 14px;
+          line-height: 16.41px;
+          letter-spacing: 1.5px;
+          padding-left: 12px;
+        }
+
+        @media screen and (max-width: 540px) {
+          width: 457px;
+        }
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+    }
+
+    &-text {
+      &_input {
+        width: 621px;
+        height: 108px;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.44px;
+        letter-spacing: 2px;
+        padding: 31px 0px 31px 13px;
+        overflow-y: hidden;
+        margin-bottom: 25.5px;
+
+        @media screen and (max-width: 992px) {
+          width: 430px;
+          height: 45px;
+          font-size: 14px;
+          line-height: 16.41px;
+          letter-spacing: 1.5px;
+          padding: 18px 0px 18px 12px;
+          margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 540px) {
+          width: 460px;
+          height: 30px;
+        }
+
+        &::placeholder {
+          color: #000000;
+        }
+      }
+    }
+  }
+}
